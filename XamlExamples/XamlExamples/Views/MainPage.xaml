@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlExamples.Views.MainPage"
+             xmlns:views="using:XamlExamples.Views"
+             Title="XAML Examples">
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableView.Root>
+                <TableSection Title="Select an example">
+                    <TextCell Text = "ArrayPage" Tapped="navigateToPage" CommandParameter="{x:Type views:ArrayPage}" />
+                    <TextCell Text = "ConstructorsPage" Tapped="navigateToPage" CommandParameter="{x:Type views:ConstructorsPage}" />
+                    <TextCell Text = "NamespacePage" Tapped="navigateToPage" CommandParameter="{x:Type views:NamespacePage}" />
+                    <TextCell Text = "PropertyValuesPage" Tapped="navigateToPage" CommandParameter="{x:Type views:PropertyValuesPage}" />
+                    <TextCell Text = "ReferencePage" Tapped="navigateToPage" CommandParameter="{x:Type views:ReferencePage}" />
+                    <TextCell Text = "StaticPage" Tapped="navigateToPage" CommandParameter="{x:Type views:StaticPage}" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
